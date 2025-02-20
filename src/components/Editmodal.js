@@ -1,7 +1,7 @@
 import React, { createElement, useRef, useState } from "react";
 import { Modal, DatePicker, Select } from "antd";
 import moment from "moment";
-import { duotoneSpace } from "@react-email/components";
+
 import permission from "../utils/permission";
 const { Option } = Select;
 function Editmodal({ isModalOpen, handleOk, handleCancel, saves, data }) {
@@ -9,7 +9,7 @@ function Editmodal({ isModalOpen, handleOk, handleCancel, saves, data }) {
   const [dates, setDates] = useState("");
   const [details, setDetails] = useState({
     names: "",
-    firstlastname: "",
+    firstlastname: "", 
     email: "",
     password: "",
     role: "Select",

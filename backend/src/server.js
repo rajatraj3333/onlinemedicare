@@ -6,13 +6,14 @@ const dotenv = require('dotenv')
 const routes = require('./routes')
 const app = express();
 
-const port = process.env.PORT || 5000;
+const port =  5000;
+
 dotenv.config();
 app.use(cors());
 app.use(express.json());
 app.use('/api', routes);
 
-console.log(process.env.RESEND_KEY)
+console.log(process.env.RESEND_KEY,'line 16')
 const resend = new Resend(process.env.RESEND_KEY);
 
 app.get("/send", async (req,res) => {
