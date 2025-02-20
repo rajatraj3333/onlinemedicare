@@ -11,11 +11,11 @@
     "migrate:create": "node-pg-migrate create -m src/migrations",
     "migrate:up": "node-pg-migrate up --migrations-dir src/migrations",
     "migrate:down": "node-pg-migrate down --migrations-dir src/migrations"
-
   },
   "dependencies": {
     "@react-email/components": "0.0.31",
     "bcryptjs": "^2.4.3",
+    "client": "file:..",
     "concurrently": "^9.1.2",
     "cors": "^2.8.5",
     "dayjs": "^1.11.13",
